@@ -1,0 +1,20 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/style.css: {}
+      css/style-responsive.css: {}
+      css/reset.css: {}  
+global-scripts:
+  version: 1.x
+  js: 
+    js/imagesloaded.pkgd.min.js: {}            
+    js/jquery.easing.min.js: {}            
+    js/jquery.jkit.1.2.16.min.js: {}                      
+    js/jquery.waitforimages.js: {}                      
+    js/masonry.pkgd.min.js: {}            
+    js/modernizr.custom.42534.js: {}            
+    js/script.js: {}            
+    js/typed.js: {}
+  dependencies:
+    - core/jquery

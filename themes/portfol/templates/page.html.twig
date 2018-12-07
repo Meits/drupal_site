@@ -1,0 +1,242 @@
+{#
+/**
+ * @file
+ * Bartik's theme implementation to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template normally located in the
+ * core/modules/system directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.highlighted: Items for the highlighted region.
+ * - page.primary_menu: Items for the primary menu region.
+ * - page.secondary_menu: Items for the secondary menu region.
+ * - page.featured_top: Items for the featured top region.
+ * - page.content: The main content of the current page.
+ * - page.sidebar_first: Items for the first sidebar.
+ * - page.sidebar_second: Items for the second sidebar.
+ * - page.featured_bottom_first: Items for the first featured bottom region.
+ * - page.featured_bottom_second: Items for the second featured bottom region.
+ * - page.featured_bottom_third: Items for the third featured bottom region.
+ * - page.footer_first: Items for the first footer column.
+ * - page.footer_second: Items for the second footer column.
+ * - page.footer_third: Items for the third footer column.
+ * - page.footer_fourth: Items for the fourth footer column.
+ * - page.footer_fifth: Items for the fifth footer column.
+ * - page.breadcrumb: Items for the breadcrumb region.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+<!--Preloader-->
+
+<div class="preloader" id="preloader">
+    <div class="item">
+      <div class="spinner">
+      </div>
+    </div>
+</div>
+
+<div class="opacity-nav">
+
+        <div class="menu-index" id="buttons" style="z-index:999999">
+        <i class="fa  fa-close"></i>
+        </div>
+
+    <ul class="menu-fullscreen">
+      <li><a class="ajax-link" href="single.html">Home</a></li>
+      <li><a class="ajax-link" href="projects.html">Projects</a></li>
+      <li><a class="ajax-link" href="about-us.html">About us</a></li>
+      <li><a class="ajax-link" href="contact.html">Contact</a></li>
+    </ul>
+
+</div>
+
+
+  <!--Header-->
+  <header id="fullscreen">
+    
+      <div class="logo" id="full" style="display:none;"><a class="ajax-link" href="index.html">THOMSOON</a></div>
+      
+        <div class="menu-index" style="display:none;" id="button">
+        <i class="fa fa-bars"></i>
+        </div>
+
+  </header>
+
+
+<!--Header-->
+<header class="boxed" id="header-white">
+
+  <div class="header-margin">
+  
+    <div class="logo"><a class="ajax-link" href="index.html">THOMSOON</a></div>
+    <ul class="header-nav">
+      <li><a class="ajax-link" href="#">Projects</a>
+        <ul>
+          <li><a class="ajax-link" href="#">Projects</a></li> 
+          <li><a class="ajax-link" href="#">Single project</a></li> 
+          <li><a class="ajax-link" href="#">Single project fullscreen</a></li> 
+                   
+        </ul>
+      
+      </li>
+      
+      <li><a class="ajax-link" href="#">About me</a></li>
+      <li><a class="ajax-link" href="#">Contact</a></li>
+    </ul>
+    
+    <ul class="social-icon">
+      <div class="social-index">
+      <li><a href="https://www.facebook.com/thomsooncom"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://www.behance.net/TomaszMazurczak"><i class="fa fa-behance"></i></a></li>
+      </div>
+    </ul>
+    
+  </div>
+
+</header>
+
+<div class="clear"></div>
+
+<!--Content-->
+
+<div class="content" id="ajax-content">
+
+
+      <div class="text-intro" id="site-type">
+
+        <h1>My creative and simplicity modern</h1>
+        <h1 class="typewrite"><span>Portfolio</span></h1>
+        <p>Please check my portfolio. All project is clean and simplicity modern style. You can buy this template.</p>
+
+      </div>
+
+
+<!--Portfolio grid-->
+
+<ul class="portfolio-grid" id="portfolio-sidebar">
+
+  
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/1.jpg">
+      <a class="ajax-link" href="#">  
+        <div class="grid-hover">
+          <h1>Single</h1>
+          <p>Branding</p>
+        </div>
+      </a>  
+  </li>
+
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/5.jpg">
+      <a class="ajax-link" href="#">  
+        <div class="grid-hover">
+          <h1>Single</h1>
+          <p>Branding</p>
+        </div>
+      </a>      
+  </li>    
+  
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/2.jpg">
+      <a class="ajax-link" href="#">  
+        <div class="grid-hover">
+          <h1>Single</h1>
+          <p>Branding</p>
+        </div>
+      </a>      
+  </li>  
+  
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/3.jpg">
+      <a class="ajax-link" href="#">  
+        <div class="grid-hover">
+          <h1>Single</h1>
+          <p>Branding</p>
+        </div>
+      </a>      
+  </li>    
+
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/4.jpg">
+      <a class="ajax-link" href="#">  
+        <div class="grid-hover">
+          <h1>Single</h1>
+          <p>Branding</p>
+        </div>
+      </a>      
+  </li>    
+
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/6.jpg">
+      <a class="ajax-link" href="#">  
+        <div class="grid-hover">
+          <h1>Single</h1>
+          <p>Branding</p>
+        </div>
+      </a>      
+  </li>  
+
+</ul>
+
+</div>
+
+
+<!--Home Sidebar-->
+
+<div id="ajax-sidebar">
+
+    <div class="home-sidebar"style="background-image:url('img/home-sidebar.jpg')" id="hero">
+
+      <div class="parallax-option" data-jkit="[parallax:strength=0.8;axis=both]">
+
+        <div class="parallax parallax1"><img src="img/business-card-2.png"></div>
+      
+      </div>
+
+      <div class="parallax-option" data-jkit="[parallax:strength=0.3;axis=both]">
+
+        <div class="parallax parallax1"><img src="img/business-card.png"></div>
+      
+      </div>
+
+    </div>
+
+</div>
+
+
+<!--Footer-->
+
+<footer id="footer-box">
+
+  <div class="footer-margin">
+   
+  <div class="copyright" id="footer-left">© Copyright 2015 Thomsoon.com. All Rights Reserved.</div>
+  
+  </div>
+
+
+</footer>
